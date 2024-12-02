@@ -7,7 +7,7 @@ to manage the live stream.
 
 ![screenshot.png](assets/screenshot.png)
 
-Here is a [screen capture](assets/obsremotescreencapture.mp4) as well.
+Here is a [screen capture](https://github.com/KopiasCsaba/customizeable_obs_remote_html/raw/refs/heads/main/assets/obsremotescreencapture.mp4) as well.
 
 You can customize the following things easily in the source:
  * host,port,password
