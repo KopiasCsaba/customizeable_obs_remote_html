@@ -29,3 +29,30 @@ With a bit more understanding you can also customize anything in it of course to
  * Serve it locally on your device or with a webserver, but don't use https (can't connect to a non-secure websocket from https due to browser policies)
  * Enjoy!
 
+## Serving with docker
+Here is a simple docker compose service to serve this file:
+
+```yaml
+# <docker-compose.yaml>
+services:
+  obsremote:
+    image: nginx:alpine
+    hostname: obsremote
+    container_name: obsremote
+    network_mode: host
+    ports:
+      - "80:80"
+    volumes:
+      - ./obsremote:/usr/share/nginx/html # Make sure to set the folder properly to where the index.html is.
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+        delay: 5s
+        window: 10s
+```
+
+```bash
+# Start the container
+docker compose up -d obsremote
+```
