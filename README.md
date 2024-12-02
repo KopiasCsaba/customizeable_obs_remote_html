@@ -21,7 +21,7 @@ With a bit more understanding you can also customize anything in it of course to
  * Automatic connection & reconnection
 
 # How to use
- * Download the [index.html](index.html) file.
+ * Download the [index.html](https://github.com/KopiasCsaba/customizeable_obs_remote_html/raw/refs/heads/main/index.html) file.
  * Edit connection details first.
  * Open it up and let it connect.
  * Open the web developer toolbar (CTRL+SHIFT+K on firefox, CTRL+SHIFT+J on chrome)
